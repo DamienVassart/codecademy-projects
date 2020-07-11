@@ -38,9 +38,11 @@ header img {
 
 .container {
     margin: auto;
+    width: 1200px;
 }
 
-.headings {
+.headings,
+.location {
     text-align: center;
     background-color: black;
 }
@@ -53,7 +55,6 @@ header img {
     top: 69px;
     background-image: url('../img/img-mission-background.jpg');
     height: 700px;
-    width: 1200px;
 }
 
 #totm-container {
@@ -78,4 +79,34 @@ header img {
 .product img {
     height: 200px;
     width: 300px;
+}
+
+#locations-container {
+    position: relative;
+    top: 150px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url('../img/img-locations-background.jpg');
+}
+
+#locations-headings {
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+#directions {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.location {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.location p {
+    line-height: 50px;
 }

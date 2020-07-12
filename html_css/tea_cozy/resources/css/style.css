@@ -1,13 +1,14 @@
 * {
     color: seashell;
+    opacity: 0.9;
 }
 
 body {
+    min-width: 600px;
     margin: 0;
     background-color: black;
     font-family: Helvetica, sans-serif;
     font-size: 22px;
-    opacity: 0.9;
 }
 
 header {
@@ -109,4 +110,17 @@ header img {
 
 .location p {
     line-height: 50px;
+}
+
+#contact {
+    position: relative;
+    top: 150px;
+    height: 200px;
+    text-align: center;
+}
+
+#footer {
+    position: relative;
+    top: 100px;
+    margin-left: 20px;
 }

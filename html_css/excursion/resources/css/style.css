@@ -1,0 +1,9 @@
+body {
+    font-size: Verdana, sans-serif;
+    background-color: hsl(0, 0, 0);
+    color: hsl(100, 100, 100);
+}
+
+h1 {
+    font-size: 50px;
+}

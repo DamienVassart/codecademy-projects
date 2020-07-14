@@ -15,7 +15,8 @@ h2 {
     font-weight: 300;
 }
 
-h6 {
+h6,
+footer {
     font-size: 21px;
     font-weight: normal;
     color: gray;
@@ -28,4 +29,9 @@ a {
 
 #excursion-icn {
     margin-top: 30px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: right;
 }

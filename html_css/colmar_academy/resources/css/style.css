@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    left: 24px;
+    right: 24px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#colmar,
+#academy {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+#colmar {
+    color: #444;
+    font-weight: bold;
+}
+
+#academy {
+    color: #bbb;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li {
+    margin-left: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}

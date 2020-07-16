@@ -1,5 +1,33 @@
-header {
-    display: flex;
+html,
+body {
+    margin: 0;
+}
+
+@media screen and (min-width: 641px) {
+    #desktop-header {
+        display: flex;
+    }
+    #mobile-header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #desktop-header {
+        display: none;
+    }
+    #mobile-header {
+        display: flex;
+    }
+}
+
+#desktop-header,
+#mobile-header {
+    align-items: center;
+    height: 64px;
+}
+
+#desktop-header {
     justify-content: space-between;
     position: fixed;
     z-index: 100;
@@ -7,7 +35,11 @@ header {
     right: 24px;
 }
 
-#logo {
+#mobile-header {
+    justify-content: space-around;
+}
+
+#desktop-logo {
     display: flex;
     align-items: center;
 }
@@ -28,17 +60,17 @@ header {
     color: #bbb;
 }
 
-nav ul {
+#desktop-menu ul {
     display: flex;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav li {
+#desktop-menu li {
     margin-left: 16px;
 }
 
-nav a {
+#desktop-menu a {
     text-decoration: none;
     color: black;
 }

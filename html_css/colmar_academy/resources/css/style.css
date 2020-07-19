@@ -107,23 +107,6 @@ main {
 
 =======================================  */
 
-@media screen and (min-width: 641px) {
-    #banner {
-        display: flex;
-        align-items: center;
-    }
-    #banner img {
-        width: 60%;
-        margin: 32px 24px;
-    }
-    #banner-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30%;
-    }
-}
-
 #banner {
     background-color: #ddd;
 }
@@ -144,11 +127,64 @@ main {
 
 #banner-content button {
     margin: 50px auto;
-    width: 100%;
+    width: 200px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1.1rem;
     padding: 8px 0;
     background-color: #444;
     border: none;
+}
+
+@media screen and (max-width: 640px) {
+    #banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    #banner img {
+        width: 100%;
+    }
+    #banner-content {
+        margin: 0 32px 0 16px;
+    }
+    #btn {
+        text-align: center;
+    }
+    #banner-content p {
+        margin-bottom: 0;
+    }
+    #banner-content button {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    #banner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #banner img {
+        width: 60%;
+        margin: 32px 24px;
+    }
+    #banner-content {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-top: 32px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
+    #banner-content h1 {
+        font-size: 1.5rem;
+    }
+    #banner-content p {
+        font-size: 0.9rem;
+    }
+    #banner-content button {
+        font-size: 1rem;
+    }
 }

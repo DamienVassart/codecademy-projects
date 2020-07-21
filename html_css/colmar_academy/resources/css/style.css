@@ -190,20 +190,50 @@ main {
 
 =======================================  */
 
-#highlight img {
+#practice {
+    display: flex;
+    flex-direction: row;
+    margin: 32px 24px;
+}
+
+#highlight {
+    padding-right: 24px;
     width: 60%;
-    margin: 32px 24px 0 24px;
+}
+
+#highlight img {
+    width: 100%;
 }
 
 #highlight h2 {
-    margin-left: 24px;
     font-size: 1.8rem;
     color: #444;
+}
+
+.speaker {
+    color: #444;
+}
+
+.quote {
+    color: #777;
+    font-weight: 100;
 }
 
 #list {
     display: flex;
     flex-direction: column;
     width: 40%;
+    padding-left: 16px;
     border-left: 1px solid #bbb;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+}
+
+.list-item img {
+    height: auto;
+    width: 35%;
 }

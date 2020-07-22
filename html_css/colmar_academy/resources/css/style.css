@@ -193,12 +193,14 @@ main {
 #practice {
     display: flex;
     flex-direction: row;
-    margin: 32px 24px;
+    margin: 0 24px;
 }
 
 #highlight {
+    margin-top: 32px;
     padding-right: 24px;
     width: 60%;
+    border-right: 1px solid #ddd;
 }
 
 #highlight img {
@@ -223,17 +225,40 @@ main {
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-top: 16px;
     padding-left: 16px;
-    border-left: 1px solid #bbb;
 }
 
 .list-item {
     display: flex;
     flex-direction: row;
-    margin-bottom: 32px;
+    margin: 16px 0;
 }
 
 .list-item img {
     height: auto;
-    width: 35%;
+    width: 30%;
+    margin-right: 16px;
+}
+
+.list-item-content {
+    width: 65%;
+}
+
+.list-item h4 {
+    font-size: 1.5rem;
+    line-height: 0px;
+    font-weight: 100;
+    color: #444;
+}
+
+.list-item p,
+.list-item a {
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: #3366dd;
 }

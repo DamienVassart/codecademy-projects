@@ -1,264 +1,290 @@
-/* ======================================= 
+        /* ======================================= 
 
 1 - General Properties
 
 =======================================  */
-
-html,
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* ======================================= 
+        
+        html,
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* ======================================= 
 
 2 - Header
 
 =======================================  */
-
-@media screen and (min-width: 641px) {
-    #desktop-header {
-        display: flex;
-    }
-    #mobile-header {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    #desktop-header {
-        display: none;
-    }
-    #mobile-header {
-        display: flex;
-    }
-}
-
-#desktop-header,
-#mobile-header {
-    align-items: center;
-    height: 64px;
-}
-
-#desktop-header {
-    justify-content: space-between;
-    margin: 0 24px;
-}
-
-#mobile-header {
-    justify-content: space-around;
-}
-
-#desktop-logo {
-    display: flex;
-    align-items: center;
-}
-
-#colmar,
-#academy {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-}
-
-#colmar {
-    color: #444;
-    font-weight: bold;
-}
-
-#academy {
-    color: #bbb;
-}
-
-#desktop-menu ul {
-    display: flex;
-    list-style: none;
-}
-
-#desktop-menu li {
-    margin-left: 16px;
-}
-
-#desktop-menu a {
-    text-decoration: none;
-    color: black;
-}
-
-
-/* ======================================= 
+        
+        @media screen and (min-width: 641px) {
+            #desktop-header {
+                display: flex;
+            }
+            #mobile-header {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+            #desktop-header {
+                display: none;
+            }
+            #mobile-header {
+                display: flex;
+            }
+        }
+        
+        #desktop-header,
+        #mobile-header {
+            align-items: center;
+            height: 64px;
+        }
+        
+        #desktop-header {
+            justify-content: space-between;
+            margin: 0 24px;
+        }
+        
+        #mobile-header {
+            justify-content: space-around;
+        }
+        
+        #desktop-logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        #colmar,
+        #academy {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+        
+        #colmar {
+            color: #444;
+            font-weight: bold;
+        }
+        
+        #academy {
+            color: #bbb;
+        }
+        
+        #desktop-menu ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        #desktop-menu li {
+            margin-left: 16px;
+        }
+        
+        #desktop-menu a {
+            text-decoration: none;
+            color: black;
+        }
+        /* ======================================= 
 
 3 - Main
 
 =======================================  */
-
-main {
-    position: absolute;
-    top: 64px;
-}
-
-
-/* ======================================= 
+        
+        main {
+            position: absolute;
+            top: 64px;
+        }
+        /* ======================================= 
 
 4 - Banner
 
 =======================================  */
-
-#banner {
-    background-color: #ddd;
-}
-
-#banner h1,
-#banner p {
-    color: #444;
-}
-
-#banner-content h1 {
-    font-size: 2.1rem;
-}
-
-#banner-content p {
-    font-size: 1.2rem;
-}
-
-#banner-content button {
-    margin: 50px auto;
-    width: 100%;
-    color: white;
-    font-size: 1.1rem;
-    padding: 8px 0;
-    background-color: #444;
-    border: none;
-}
-
-@media screen and (max-width: 640px) {
-    #banner {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-    #banner img {
-        width: 100%;
-    }
-    #banner-content {
-        margin: 0 32px 0 16px;
-    }
-    #btn {
-        text-align: center;
-    }
-    #banner-content p {
-        margin-bottom: 0;
-    }
-    #banner-content button {
-        width: 200px;
-    }
-}
-
-@media screen and (min-width: 641px) {
-    #banner {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    #banner img {
-        width: 60%;
-        margin: 32px 24px;
-    }
-    #banner-content {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin-top: 32px;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 900px) {
-    #banner-content h1 {
-        font-size: 1.5rem;
-    }
-    #banner-content p {
-        font-size: 0.9rem;
-    }
-    #banner-content button {
-        font-size: 1rem;
-    }
-}
-
-
-/* ======================================= 
+        
+        #banner {
+            background-color: #ddd;
+        }
+        
+        #banner h1,
+        #banner p {
+            color: #444;
+        }
+        
+        #banner-content h1 {
+            font-size: 2.1rem;
+        }
+        
+        #banner-content p {
+            font-size: 1.2rem;
+        }
+        
+        #banner-content button {
+            margin: 50px auto;
+            width: 100%;
+            color: white;
+            font-size: 1.1rem;
+            padding: 8px 0;
+            background-color: #444;
+            border: none;
+        }
+        
+        @media screen and (max-width: 640px) {
+            #banner {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+            }
+            #banner img {
+                width: 100%;
+            }
+            #banner-content {
+                margin: 0 32px 0 16px;
+            }
+            #btn {
+                text-align: center;
+            }
+            #banner-content p {
+                margin-bottom: 0;
+            }
+            #banner-content button {
+                width: 200px;
+            }
+        }
+        
+        @media screen and (min-width: 641px) {
+            #banner {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            #banner img {
+                width: 60%;
+                margin: 32px 24px;
+            }
+            #banner-content {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                margin-top: 32px;
+            }
+        }
+        
+        @media screen and (min-width: 320px) and (max-width: 900px) {
+            #banner-content h1 {
+                font-size: 1.5rem;
+            }
+            #banner-content p {
+                font-size: 0.9rem;
+            }
+            #banner-content button {
+                font-size: 1rem;
+            }
+        }
+        /* ======================================= 
 
 5 - Practice
 
 =======================================  */
-
-#practice {
-    display: flex;
-    flex-direction: row;
-    margin: 0 24px;
-}
-
-#highlight {
-    margin-top: 32px;
-    padding-right: 24px;
-    width: 60%;
-    border-right: 1px solid #ddd;
-}
-
-#highlight img {
-    width: 100%;
-}
-
-#highlight h2 {
-    font-size: 1.8rem;
-    color: #444;
-}
-
-.speaker {
-    color: #444;
-}
-
-.quote {
-    color: #777;
-    font-weight: 100;
-}
-
-#list {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-top: 16px;
-    padding-left: 16px;
-}
-
-.list-item {
-    display: flex;
-    flex-direction: row;
-    margin: 16px 0;
-}
-
-.list-item img {
-    height: auto;
-    width: 30%;
-    margin-right: 16px;
-}
-
-.list-item-content {
-    width: 65%;
-}
-
-.list-item h4 {
-    font-size: 1.5rem;
-    line-height: 0px;
-    font-weight: 100;
-    color: #444;
-}
-
-.list-item p,
-.list-item a {
-    font-size: 0.9rem;
-    font-weight: 100;
-}
-
-.list-item a {
-    text-decoration: none;
-    color: #3366dd;
-}
+        
+        #practice {
+            display: flex;
+            flex-direction: row;
+            margin: 0 24px;
+        }
+        
+        #highlight {
+            margin-top: 32px;
+            padding-right: 24px;
+            width: 60%;
+            border-right: 1px solid #ddd;
+        }
+        
+        #highlight img {
+            width: 100%;
+        }
+        
+        #highlight h2 {
+            font-size: 1.8rem;
+            color: #444;
+        }
+        
+        .speaker {
+            color: #444;
+        }
+        
+        .quote {
+            color: #777;
+            font-weight: 100;
+        }
+        
+        #list {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-top: 16px;
+            padding-left: 16px;
+        }
+        
+        .list-item {
+            display: flex;
+            flex-direction: row;
+            margin: 16px 0;
+        }
+        
+        .list-item img {
+            display: block;
+            height: auto;
+            width: 35%;
+            margin-right: 16px;
+        }
+        
+        .list-item-content {
+            width: 65%;
+        }
+        
+        .list-item h4 {
+            font-size: 1.5rem;
+            font-weight: 100;
+            color: #444;
+        }
+        
+        .list-item p,
+        .list-item a {
+            font-size: 0.9rem;
+            font-weight: 100;
+        }
+        
+        .list-item a {
+            text-decoration: none;
+            color: #3366dd;
+        }
+        
+        @media screen and (max-width: 1125px) {
+            .list-item img {
+                display: none;
+            }
+            .list-item-content {
+                width: 100%;
+                margin-left: 16px;
+            }
+        }
+        
+        @media screen and (min-width: 641px) {
+            .list-img-mobile img {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+            #highlight {
+                display: none;
+            }
+            #list {
+                width: 100%;
+            }
+            .list-item {
+                margin: 0;
+                flex-direction: column;
+            }
+            .list-img-mobile img {
+                display: block;
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
